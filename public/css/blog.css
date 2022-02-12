@@ -1,0 +1,222 @@
+.blog, .article{
+    position: relative;
+    height: fit-content;
+    padding-bottom: 0;
+}
+
+
+.article, .title{
+    min-height: auto;
+    height: fit-content;
+    padding: 0 10px;
+    white-space: normal;
+}
+
+
+.title{
+    color: #FEBB09;
+    text-shadow:  0 0 10px #FEBB09, 0 0 40px #FEBB10, 0 0 80px #FEBB12;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.published{
+    margin: 20px 0 60px;
+    padding: 0 10px;
+    text-decoration: capitalize;
+    font-style: italic;
+    color: #AB9356;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+.published span{
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.article *{
+    word-break: break-word;
+    margin: 30px 0;
+    color: #fff;
+    font-family: 'Play', sans-serif;
+}
+
+
+/*STYLE IMAGES IN THE POSTS */
+.article-image{
+    max-width: 100%;
+    max-height: 400%;
+    display: block;
+    margin: 30px auto;
+    object-fit: contain;
+}
+
+
+
+/*STYLE INTERACTIVE BLOG CARDS*/
+.sub-heading{
+    /* padding: 0 5vw; */
+    padding-top: 100px;
+    text-align: center;
+    color: #FEBB09;
+    text-shadow:  0 0 3px #FEBB09, 0 0 5px #FEBB10, 0 0 8px #FEBB12;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 80px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+
+#edit-blog-btn{
+    display: none;
+}
+
+.blue{
+    padding: 10px 20px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    background: #0032FF;
+    color: #121212;
+}
+
+.blue:hover{
+    cursor: pointer;
+    color: #121212;
+    background: #0032FF;
+    box-shadow: 0 0 10px #0032FF, 0 0 40px #0031FF, 0 0 80px #0030FF;
+    animation: jelly 0.5s;
+}
+
+
+
+
+
+
+/*SHARE STYLING BUTTON*/
+.btn_wrap {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    width: 180px;
+    height: 36px;
+    background-color: #121212;
+    border-radius: 80px;
+    padding: 0 18px;
+    will-change: transform;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.btn_wrap:hover {
+    /* transition-delay: .4s; */
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+
+.share {
+    position: absolute;
+    z-index: 99;
+    width: 180px;
+    height: 72px;
+    border-radius: 80px;
+    font-family: 'Orbitron', sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+    line-height: 70px;
+    letter-spacing: 2px;
+    color: #FEBB09;
+    background-color: #121212;
+    padding: 0 18px;
+    -webkit-transition: all 1.2s ease;
+    transition: all 1.2s ease;
+}
+
+.share:hover{
+    box-shadow:  0 0 3px #FEBB09, 0 0 5px #FEBB10, 0 0 8px #FEBB12;
+}
+
+
+.scontainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 180px;
+    height: 32px;
+    border-radius: 80px;
+}
+
+
+.btn_wrap:hover span {
+    -webkit-transition-delay: .25s;
+            transition-delay: .25s;
+    -webkit-transform: translateX(-280px);
+            transform: translateX(-280px)
+}
+
+.btn_wrap:hover i {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+}
+
+
+.dr {
+position: absolute;
+  bottom: 16px; 
+  right: 16px;
+  width:100px;
+}
+
+
+#fb-share-button {
+    background: #3b5998;
+    border-radius: 40px;
+    font-weight: 300;
+    height: 20px;
+    display: inline-block;
+    position: static;
+}
+
+#fb-share-button:hover {
+    cursor: pointer;
+    background: #213A6F
+}
+
+#fb-share-button span {
+    vertical-align: middle;
+    color: white;
+    font-size: 9px;
+    padding-right: 11px; 
+    padding-bottom: 8px;
+}
+
+.facebook{
+    font-size: 9px;
+    padding-left: 15px;
+    padding-bottom: 5px;
+    vertical-align: middle;
+    border-radius: 2px;
+}
